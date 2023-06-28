@@ -1,4 +1,4 @@
-package com.rami.kiparocleanarchitecture
+package com.rami.kiparocleanarchitecture.presentation
 
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.rami.kiparocleanarchitecture.presentation.MainViewModel
-import com.rami.kiparocleanarchitecture.presentation.MainViewModelFactory
+import com.rami.kiparocleanarchitecture.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -48,4 +47,5 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 }

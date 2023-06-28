@@ -3,10 +3,8 @@ package com.rami.kiparocleanarchitecture.presentation
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.rami.cleancodetest.data.repository.UserRepoImpl
-import com.rami.cleancodetest.data.storage.sharedprefs.SharedPrefUserStorage
-import com.rami.cleancodetest.domain.usecase.GetUserNameUseCase
-import com.rami.cleancodetest.domain.usecase.SaveUerNameUseCase
+import com.rami.domain.usecase.SaveUerNameUseCase
+import com.rami.domain.usecase.GetUserNameUseCase
 
 class MainViewModel(
     private val getUserNameUseCase: GetUserNameUseCase,
@@ -26,13 +24,13 @@ class MainViewModel(
     }
 
     fun save(text: String) {
-        val params = com.rami.cleancodetest.domain.models.SaveUserNameParam(name = text)
+        val params = com.rami.domain.models.SaveUserNameParam(name = text)
         val resultData: Boolean = saveUserNameUseCase.execute(param = params)
         resultLive.value  = "Save result = $resultData"
     }
 
     fun load() {
-        val userName: com.rami.cleancodetest.domain.models.UserName =
+        val userName: com.rami.domain.models.UserName =
             getUserNameUseCase.execute()
         resultLive.value  = "${userName.firstName} ${userName.lastName}"
     }

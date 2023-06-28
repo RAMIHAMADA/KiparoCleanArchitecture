@@ -1,10 +1,10 @@
-package com.rami.cleancodetest.data.repository
+package rami.data.repository
 
 import com.rami.cleancodetest.data.storage.models.User
 import com.rami.cleancodetest.data.storage.UserStorage
-import com.rami.cleancodetest.domain.models.SaveUserNameParam
-import com.rami.cleancodetest.domain.models.UserName
-import com.rami.cleancodetest.domain.repository.UserRepo
+import com.rami.domain.models.SaveUserNameParam
+import com.rami.domain.models.UserName
+import com.rami.domain.ripository.UserRepo
 
 
 class UserRepoImpl(private val userStorage: UserStorage) : UserRepo {

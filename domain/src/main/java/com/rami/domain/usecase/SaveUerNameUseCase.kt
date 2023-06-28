@@ -1,7 +1,8 @@
-package com.rami.cleancodetest.domain.usecase
+package com.rami.domain.usecase
 
-import com.rami.cleancodetest.domain.models.SaveUserNameParam
-import com.rami.cleancodetest.domain.repository.UserRepo
+
+import com.rami.domain.models.SaveUserNameParam
+import com.rami.domain.ripository.UserRepo
 
 class SaveUerNameUseCase(private val userRepo: UserRepo) {
 

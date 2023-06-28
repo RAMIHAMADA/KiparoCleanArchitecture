@@ -1,4 +1,4 @@
-package com.rami.cleancodetest.domain.models
+package com.rami.domain.models
 
 class SaveUserNameParam(val name: String) {
 }

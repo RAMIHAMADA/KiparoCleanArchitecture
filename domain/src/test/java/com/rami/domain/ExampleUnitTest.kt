@@ -1,4 +1,4 @@
-package rami.domain
+package com.rami.domain
 
 import org.junit.Test
 

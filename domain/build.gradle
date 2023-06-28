@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'rami.domain'
+    namespace 'com.rami.domain'
     compileSdk 33
 
     defaultConfig {
